@@ -58,3 +58,35 @@ void showstack()
 }
  
 int main()
+{
+	int ch,x;
+	Node *nptr;
+	
+	while(1)
+	{
+	cout<<"\n\n1.Push\n2.Pop\n3.Display\n4.Exit";
+	cout<<"\nmasukan pilihan anda(1-4):";
+	cin>>ch;
+	
+	switch(ch){
+	case 1: cout<<"\nmasukan data:";
+	cin>>x;
+	nptr=nodebaru(x);
+	push(nptr);
+	break;
+	
+	case 2: pop();
+	break;
+	
+	case 3: showstack();
+	break;
+	
+	case 4: exit(0);
+	
+	default: cout<<"\npilihan tidak tersedia!!";
+	}
+	}while (ch!= 4);
+	
+	
+	return 0;
+}
