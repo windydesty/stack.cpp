@@ -18,3 +18,23 @@ Node* nodebaru(int x)
 }
  
 void push(Node *q)
+{
+	if(atas==NULL)
+	atas=q;
+	else
+	{
+	q->next=atas;
+	atas=q;
+	}
+}
+ 
+void pop(){
+	if(atas==NULL){
+	cout<<"Stack kosong!!";
+	}
+	else{
+	cout<<"Hapus Elemen"<<atas->data;
+	p=atas;
+	atas=atas->next;
+	delete(p);
+	}
