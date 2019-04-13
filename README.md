@@ -38,3 +38,23 @@ void pop(){
 	atas=atas->next;
 	delete(p);
 	}
+	}
+ 
+void showstack()
+{
+	Node *q;
+	q=atas;
+ 
+	if(atas==NULL){
+	cout<<"Stack kosong!!";
+	}
+	else{
+	while(q!=NULL)
+	{
+	cout<<q->data<<" ";
+	q=q->next;
+	}	
+	}
+}
+ 
+int main()
