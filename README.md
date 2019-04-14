@@ -38,7 +38,7 @@ void pop(){
 	atas=atas->next;
 	delete(p);
 	}
-	}
+}
  
 void showstack()
 {
